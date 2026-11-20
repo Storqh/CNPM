@@ -1,95 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net" agent="BearCafe-SystemAnalyst" version="24.7.17">
-  <diagram id="diag_4qfe7hkp" name="State Diagram - Ban (CafeTable)">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1160" pageHeight="500" math="0" shadow="0">
+  <diagram id="diag_no18aurs" name="State Diagram - Ban (CafeTable)">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="580" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         <mxCell id="t" value="BIỂU ĐỒ TRẠNG THÁI (STATE MACHINE) – VÒNG ĐỜI BÀN PHỤC VỤ (CafeTable.Status)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="14" width="1080" height="34" as="geometry"/>
+          <mxGeometry x="40" y="14" width="1220" height="34" as="geometry"/>
         </mxCell>
         <mxCell id="tb_init" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="65" y="224" width="24" height="24" as="geometry"/>
+          <mxGeometry x="44" y="250" width="24" height="24" as="geometry"/>
         </mxCell>
-        <mxCell id="tb_avail" value="Available
-(Bàn trống – Sẵn sàng phục vụ)" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=12;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="185" y="200" width="225" height="72" as="geometry"/>
+        <mxCell id="tb_avail" value="&lt;b&gt;Available&lt;/b&gt;&lt;br/&gt;(Bàn trống – Sẵn sàng)" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="195" y="226" width="215" height="72" as="geometry"/>
         </mxCell>
-        <mxCell id="tb_occ" value="Occupied
-(Đang phục vụ – Có 01 TableSession Active)" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=12;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="640" y="86" width="285" height="72" as="geometry"/>
+        <mxCell id="tb_occ" value="&lt;b&gt;Occupied&lt;/b&gt;&lt;br/&gt;(Đang phục vụ – 01 TableSession Active)" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="750" y="74" width="295" height="72" as="geometry"/>
         </mxCell>
-        <mxCell id="tb_res" value="Reserved
-(Đã đặt trước – Mở rộng sau v1.0)" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=12;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="640" y="200" width="285" height="72" as="geometry"/>
+        <mxCell id="tb_res" value="&lt;b&gt;Reserved&lt;/b&gt;&lt;br/&gt;(Đã đặt trước – Mở rộng sau v1.0)" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="750" y="226" width="295" height="72" as="geometry"/>
         </mxCell>
-        <mxCell id="tb_dis" value="Disabled
-(Tạm ngưng sử dụng – Bảo trì)" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=12;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="640" y="326" width="285" height="72" as="geometry"/>
+        <mxCell id="tb_dis" value="&lt;b&gt;Disabled&lt;/b&gt;&lt;br/&gt;(Tạm ngưng sử dụng – Bảo trì)" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="750" y="382" width="295" height="72" as="geometry"/>
         </mxCell>
-        <mxCell id="te0" value="Tạo bàn mới
-(UC3.1)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tb_init" target="tb_avail">
+        <mxCell id="te0" value="Tạo bàn&lt;br/&gt;(UC3.1)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.25;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="tb_init" target="tb_avail">
           <mxGeometry relative="1" as="geometry"></mxGeometry>
         </mxCell>
-        <mxCell id="te1" value="Mở phiên bàn / Tạo đơn Dine-in
-[Không có Session Active] / Tạo TableSession" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tb_avail" target="tb_occ">
+        <mxCell id="te1" value="Mở phiên bàn / Tạo đơn Dine-in&lt;br/&gt;[Chưa có Session Active]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.25;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.45;exitY=0;entryX=0;entryY=0.28;" edge="1" parent="1" source="tb_avail" target="tb_occ">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="297" y="108"/>
+              <mxPoint x="292" y="94"/>
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="te2" value="Đóng phiên bàn / Hủy đơn / Chuyển bàn
-[Đủ điều kiện đóng bàn] / Kết thúc TableSession" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tb_occ" target="tb_avail">
+        <mxCell id="te2" value="Đóng phiên / Hủy đơn / Chuyển bàn&lt;br/&gt;/ Kết thúc TableSession" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.25;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.82;entryX=0.82;entryY=0;" edge="1" parent="1" source="tb_occ" target="tb_avail">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="475" y="144"/>
-              <mxPoint x="475" y="218"/>
+              <mxPoint x="371" y="133"/>
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="te3" value="Đặt trước bàn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tb_avail" target="tb_res">
+        <mxCell id="te3" value="Đặt trước bàn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.25;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.3;entryX=0;entryY=0.3;" edge="1" parent="1" source="tb_avail" target="tb_res">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="te4" value="Hủy đặt trước / Quá giờ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.25;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.7;entryX=1;entryY=0.7;" edge="1" parent="1" source="tb_res" target="tb_avail">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="te5" value="Khách nhận bàn&lt;br/&gt;/ Mở TableSession" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.25;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="tb_res" target="tb_occ">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="510" y="224"/>
+              <mxPoint x="1155" y="262"/>
+              <mxPoint x="1155" y="110"/>
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="te4" value="Hủy đặt trước / Quá giờ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tb_res" target="tb_avail">
+        <mxCell id="te6" value="Ngừng sử dụng [Bàn trống]&lt;br/&gt;(Admin/Manager)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.25;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.82;exitY=1;entryX=0;entryY=0.25;" edge="1" parent="1" source="tb_avail" target="tb_dis">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="510" y="250"/>
+              <mxPoint x="371" y="400"/>
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="te5" value="Khách đến nhận bàn
-/ Mở TableSession" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tb_res" target="tb_occ">
+        <mxCell id="te7" value="Kích hoạt lại bàn (Admin/Manager)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.25;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.78;entryX=0.45;entryY=1;" edge="1" parent="1" source="tb_dis" target="tb_avail">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="975" y="236"/>
-              <mxPoint x="975" y="122"/>
+              <mxPoint x="292" y="438"/>
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="te6" value="Ngừng sử dụng bàn
-[Admin/Manager &amp; bàn trống] (UC3.1)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tb_avail" target="tb_dis">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="297" y="348"/>
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="te7" value="Kích hoạt lại bàn
-[Admin/Manager] (UC3.1)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="tb_dis" target="tb_avail">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="465" y="378"/>
-              <mxPoint x="260" y="378"/>
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="note" value="Ràng buộc toàn vẹn (Tài liệu 1 – Mục 6.9 &amp; 10.1): Filtered UNIQUE Index trên TableSessions(TableId) WHERE Status = 'Active' kết hợp cột RowVersion trên CafeTables đảm bảo không thể tạo hai phiên hoạt động đồng thời cho cùng một bàn." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#F5F5F5;strokeColor=#000000;strokeWidth=1.1;fontFamily=Times New Roman;fontSize=11;fontColor=#000000;align=left;spacingLeft=8;spacingRight=6;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="40" y="424" width="1080" height="52" as="geometry"/>
+        <mxCell id="note" value="&lt;b&gt;Ràng buộc toàn vẹn (Tài liệu 1 – Mục 6.9 &amp;amp; 10.1):&lt;/b&gt; Filtered UNIQUE Index trên TableSessions(TableId) WHERE Status = 'Active' kết hợp RowVersion trên CafeTables ngăn tuyệt đối việc mở hai phiên đồng thời cho cùng một bàn." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#666666;strokeWidth=1;dashed=1;fontFamily=Times New Roman;fontSize=11;fontColor=#000000;align=left;spacingLeft=10;spacingRight=8;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="496" width="1220" height="54" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
