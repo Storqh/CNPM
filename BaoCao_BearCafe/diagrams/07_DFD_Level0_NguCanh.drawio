@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="BearCafe-SystemAnalyst" version="24.7.17">
+  <diagram id="diag_pyjwtk37" name="DFD Level 0 - Bieu do ngu canh">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1540" pageHeight="820" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="t" value="BIỂU ĐỒ LUỒNG DỮ LIỆU MỨC 0 (DFD LEVEL 0 – CONTEXT DIAGRAM) – HỆ THỐNG BEARCAFE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=16;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="14" width="1460" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="p0" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="595" y="290" width="350" height="210" as="geometry"/>
+        </mxCell>
+        <mxCell id="p0_hdr" value="0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=11.5;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="p0">
+          <mxGeometry x="0" y="0" width="350" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="p0_txt" value="&lt;b&gt;HỆ THỐNG KINH DOANH &amp;amp;&lt;br/&gt;QUẢN LÝ QUÁN CÀ PHÊ BEARCAFE&lt;/b&gt;&lt;br/&gt;&lt;i&gt;(BearCafe Management System v1.0)&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Times New Roman;fontSize=11.5;fontColor=#000000;" vertex="1" parent="p0">
+          <mxGeometry x="4" y="24" width="342" height="184" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_admin" value="Chủ quán&lt;br/&gt;(ADMIN)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=12;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="110" width="185" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_mgr" value="Quản lý&lt;br/&gt;(MANAGER)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=12;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="185" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_cash" value="Thu ngân&lt;br/&gt;(CASHIER)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=12;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="610" width="185" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_bar" value="Nhân viên pha chế&lt;br/&gt;(BARISTA)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=12;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="210" width="185" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_inv" value="Nhân viên kho&lt;br/&gt;(INVENTORY_STAFF)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;strokeWidth=1.8;fontFamily=Times New Roman;fontSize=12;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="520" width="185" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="f_a_in" value="Thông tin đăng nhập, Cấu hình RBAC/Hệ thống&lt;br/&gt;&amp;amp; Dữ liệu quản trị" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.3;entryX=0;entryY=0.12;" edge="1" parent="1" source="e_admin" target="p0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="130"/>
+              <mxPoint x="540" y="315"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f_a_out" value="Phiên JWT, Nhật ký AuditLogs&lt;br/&gt;&amp;amp; Báo cáo tổng quan (Excel/PDF)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.26;entryX=1;entryY=0.72;" edge="1" parent="1" source="p0" target="e_admin">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="345"/>
+              <mxPoint x="500" y="159"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f_m_in" value="Thông tin đăng nhập, Dữ liệu Thực đơn/Bàn/Nhân sự,&lt;br/&gt;Công thức, Phiếu chi &amp;amp; Yêu cầu hủy/hoàn tiền" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.32;entryX=0;entryY=0.43;" edge="1" parent="1" source="e_mgr" target="p0">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="f_m_out" value="Phiên JWT, Trạng thái vận hành&lt;br/&gt;&amp;amp; Số liệu Dashboard/Báo cáo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.58;entryX=1;entryY=0.72;" edge="1" parent="1" source="p0" target="e_mgr">
+          <mxGeometry relative="1" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="f_c_in" value="Thông tin đăng nhập, Yêu cầu phiên bàn,&lt;br/&gt;Dữ liệu đơn POS, Khách hàng &amp;amp; Thanh toán" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.3;entryX=0;entryY=0.74;" edge="1" parent="1" source="e_cash" target="p0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="630"/>
+              <mxPoint x="500" y="445"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f_c_out" value="Phiên JWT, Sơ đồ bàn, Order DTO,&lt;br/&gt;Trạng thái thanh toán &amp;amp; Hóa đơn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.88;entryX=1;entryY=0.72;" edge="1" parent="1" source="p0" target="e_cash">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="475"/>
+              <mxPoint x="540" y="659"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f_b_in" value="Thông tin đăng nhập &amp;amp;&lt;br/&gt;Trạng thái pha chế (Preparing / Ready / Served)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.3;entryX=1;entryY=0.22;" edge="1" parent="1" source="e_bar" target="p0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="230"/>
+              <mxPoint x="1010" y="336"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f_b_out" value="Phiên JWT, Danh sách đơn KDS realtime (SignalR)&lt;br/&gt;&amp;amp; Cảnh báo hủy đơn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.4;entryX=0;entryY=0.72;" edge="1" parent="1" source="p0" target="e_bar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1050" y="374"/>
+              <mxPoint x="1050" y="259"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f_i_in" value="Thông tin đăng nhập, Dữ liệu nguyên liệu/NCC&lt;br/&gt;&amp;amp; Phiếu biến động kho (Nhập/Xuất/Kiểm kê)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.3;entryX=1;entryY=0.65;" edge="1" parent="1" source="e_inv" target="p0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1050" y="540"/>
+              <mxPoint x="1050" y="426"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f_i_out" value="Phiên JWT, Sổ biến động tồn kho&lt;br/&gt;&amp;amp; Cảnh báo tồn dưới mức tối thiểu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endSize=9;strokeColor=#000000;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=10.5;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.82;entryX=0;entryY=0.72;" edge="1" parent="1" source="p0" target="e_inv">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="462"/>
+              <mxPoint x="1010" y="569"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note" value="&lt;b&gt;Chuẩn ký hiệu Gane &amp;amp; Sarson:&lt;/b&gt; Hình chữ nhật vuông là Tác nhân ngoài (khớp 100% 05 Actor Use Case); hình chữ nhật bo góc có thanh tiêu đề số là Tiến trình trung tâm; nhãn trên mũi tên là cụm danh từ dữ liệu vào/ra làm chuẩn cân bằng (Balancing) cho DFD Mức 1." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#666666;strokeWidth=1;dashed=1;fontFamily=Times New Roman;fontSize=11;fontColor=#000000;align=left;spacingLeft=10;spacingRight=8;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="738" width="1460" height="54" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
